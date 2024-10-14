@@ -1,0 +1,49 @@
+
+.profile-section {
+    text-align: center;
+    padding: 24px;
+    background-color: #ede6e6;
+    margin-bottom: 16px;
+    margin-top: 24px;
+    border-radius: 15px; 
+    border: none; 
+    
+  }
+  
+  .profile-section h4 {
+    margin-top: 16px;
+  }
+  
+  .profile-section p {
+    color: rgba(0, 0, 0, 0.45);
+    
+  }
+  
+  
+  .content {
+    margin: 24px 16px 0;
+    background-color: #ede6e6;
+    border-radius: 15px; 
+    border: none;
+  }
+  
+  .detail-section {
+    padding: 24px;
+    min-height: 360px;
+    
+  }
+  
+  
+  .button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .cancel-button {
+    margin-right: 8px;
+  }
+  .bold-label .ant-form-item-label > label {
+    font-weight: 15px;
+  }
+  

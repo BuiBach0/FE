@@ -1,0 +1,54 @@
+tbody{
+    margin-top: 10px;
+}
+/* Sider */
+.sider {
+    background: #34495e;
+  }
+  
+  /* Logo Placeholder */
+  .demo-logo-vertical {
+    margin: 16px;
+  }
+  
+  /* Menu background */
+  .ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+    background: #34495e;
+  }
+  
+  /* Header */
+  .header {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+  
+  /* Button style for collapsing menu */
+  .collapse-button {
+    font-size: 16px;
+    width: 64px;
+    height: 64px;
+    color: #3498db;
+  }
+  
+  /* Content area */
+  .content {
+    margin: 24px 16px;
+    padding: 24px;
+    min-height: calc(100vh - 112px);
+    background: #f0f4f8;
+  }
+  
+  /* Layout row and column */
+  .row {
+    height: calc(100vh - 64px);
+  }
+  
+  /* Antd theme overrides */
+  :root {
+    --color-bg-container: #f0f4f8;
+    --border-radius-lg: 8px;
+  }
+  

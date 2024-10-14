@@ -1,0 +1,113 @@
+
+.profile-section {
+  text-align: center;
+  padding: 24px;
+  background-color: #ede6e6;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  border-radius: 15px; 
+  border: none; 
+  
+}
+
+.profile-section h4 {
+  margin-top: 16px;
+}
+
+.profile-section p {
+  color: rgba(0, 0, 0, 0.45);
+  
+}
+
+
+.content {
+  margin: 24px 16px 0;
+  background-color: #ede6e6;
+  border-radius: 15px; 
+  border: none;
+}
+
+.detail-section {
+  padding: 24px;
+  min-height: 360px;
+  
+}
+
+
+.button-group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.cancel-button {
+  margin-right: 8px;
+}
+.bold-label .ant-form-item-label > label {
+  font-weight: 15px;
+}
+/* AddProfile.css */
+
+.profile-layout {
+  min-height: 100vh;
+}
+
+.profile-header {
+  background: #001529;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+}
+
+.profile-title {
+  font-size: 2rem;
+  margin: 16px 0;
+}
+
+.profile-row {
+  height: calc(100vh - 64px);
+}
+
+.profile-col {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+.detail-col {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.detail-section {
+  padding: 20px;
+}
+
+.detail-title {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.cancel-button {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .profile-title {
+    font-size: 1.5rem;
+  }
+
+  .profile-col {
+    text-align: center;
+  }
+
+  .detail-title {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,46 @@
+.button-group {
+    display: flex;
+    justify-content: center; /* Canh giữa các nút */
+    gap: 10px; /* Khoảng cách giữa các nút */
+    margin-top: 20px;
+  }
+  
+  .button-group .ant-btn {
+    min-width: 100px; /* Chiều rộng tối thiểu của nút */
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  /* Nút Edit với màu xanh đậm */
+  .button-group .ant-btn-primary {
+    background-color: #001529; /* Xanh lam đậm */
+    border: none;
+    color: white;
+  }
+  
+  .button-group .ant-btn-primary:hover {
+    background-color: #002140; /* Tối hơn chút khi hover */
+  }
+  
+  /* Các nút Exit, Add Classes, Add Classes2 với màu trắng và viền xanh nhạt */
+  .button-group .ant-btn-default {
+    background-color: #ffffff; /* Nền trắng */
+    border: 1px solid #1890ff; /* Viền xanh lam */
+    color: #1890ff; /* Text xanh lam */
+  }
+  
+  .button-group .ant-btn-default:hover {
+    background-color: #f0f5ff; /* Xanh lam nhạt khi hover */
+    border-color: #40a9ff;
+    color: #40a9ff;
+  }
+  
+  /* Hiệu ứng hover chung cho tất cả các nút */
+  .button-group .ant-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
