@@ -9,17 +9,9 @@ import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AudioOutlined } from "@ant-design/icons";
 import "./PersonalMenu.css"
-const { Search } = Input;
+import InputSearch from "./InputSearch";
 
-const suffix = (
-  <AudioOutlined
-    style={{
-      fontSize: 16,
-      color: "#1677ff",
-    }}
-  />
-);
-const onSearch = (value, _e, info) => console.log(info?.source, value);
+
 const handleLogOut = () => {
   localStorage.clear();
 };
@@ -54,15 +46,7 @@ function Test() {
   return (
     
     <div className="a">
-      <Search
-        placeholder="input search text"
-        allowClear
-        onSearch={onSearch}
-        style={{
-          width: 200,
-          margin: '20px 20px 0px 0px',
-        }}
-      />
+      <InputSearch/>
    
       <Dropdown overlay={menu} trigger={["click"]}>
         <a onClick={(e) => e.preventDefault()}>

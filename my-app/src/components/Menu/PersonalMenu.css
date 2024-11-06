@@ -1,3 +1,6 @@
 .input-Search{
     margin-top: 10px;
 }
+.a{
+    display: flex;
+    gap:10; }

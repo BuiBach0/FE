@@ -54,13 +54,28 @@ function SiderLayout({ children }) {
                 <NavLink to="/ListUser">User</NavLink>
               </Menu.Item>
               <Menu.Item key="12">
-                <NavLink to="/AddClass">Class</NavLink>
+                <NavLink to="/ListClass">Class</NavLink>
               </Menu.Item>
               <Menu.Item key="13">
-                <NavLink to="/AddDepartments">Department</NavLink>
+                <NavLink to="/ListDepartments">Department</NavLink>
               </Menu.Item>
             </Menu.SubMenu>
           )}
+          <Menu.SubMenu
+              key="1.5"
+              icon={<i className="bi bi-pc-display-horizontal" />}
+              title="Admin_2"
+            >
+              <Menu.Item key="11.5">
+                <NavLink to="/CreateUser">User</NavLink>
+              </Menu.Item>
+              <Menu.Item key="12.5">
+                <NavLink to="/CreateClass">Class</NavLink>
+              </Menu.Item>
+              <Menu.Item key="13.5">
+                <NavLink to="/AddDepartments">Department</NavLink>
+              </Menu.Item>
+            </Menu.SubMenu>
           {roleName && (
             <Menu.SubMenu key="2" icon={<UserOutlined />} title="Profile">
               <Menu.Item key="21">
@@ -68,7 +83,7 @@ function SiderLayout({ children }) {
               </Menu.Item>
               {roleName === "admin" ? (
                 <Menu.Item key="22">
-                  <NavLink to="/Option2">Option 2</NavLink>
+                  <NavLink to="/ListUser">Option 2</NavLink>
                 </Menu.Item>
               ) : roleName === "teacher" ? (
                 <>
@@ -76,7 +91,7 @@ function SiderLayout({ children }) {
                     <NavLink to="/Option2">Grade criteria</NavLink>
                   </Menu.Item>
                   <Menu.Item key="23">
-                    <NavLink to="/Option2">Student in class</NavLink>
+                    <NavLink to="/EditUser">Student in class</NavLink>
                   </Menu.Item>
                   <Menu.Item key="24">
                     <NavLink to="/Option2">Create grade</NavLink>
@@ -87,13 +102,13 @@ function SiderLayout({ children }) {
           )}
           <Menu.SubMenu key="3" icon={<UploadOutlined />} title="Nav 3">
             <Menu.Item key="31">
-              <NavLink to="/Option1">Grades</NavLink>
+              <NavLink to="/EditUser">Grades</NavLink>
             </Menu.Item>
             <Menu.Item key="32">
-              <NavLink to="/Option2">Join class</NavLink>
+              <NavLink to="/ListDepartments">Join class</NavLink>
             </Menu.Item>
             <Menu.Item key="33">
-              <NavLink to="/Option2">Class</NavLink>
+              <NavLink to="/DeleteUser">Class</NavLink>
             </Menu.Item>
           </Menu.SubMenu>
         </Menu>

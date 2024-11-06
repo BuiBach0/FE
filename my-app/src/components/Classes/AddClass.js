@@ -58,8 +58,7 @@ function AddClass() {
             console.error('Error fetching data:', error);
         }
     };
-
-    fetchData();
+    
 }, []); // Chỉ chạy khi component mount
   
   // Hàm để xử lý việc thêm lớp học

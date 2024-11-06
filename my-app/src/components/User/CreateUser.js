@@ -18,7 +18,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import axiosInstance from "../../Helper/AxiosInstance";
 import SiderLayout from "../Menu/SiderLayout";
 
-function CreateTeacher() {
+function CreateUser() {
   const [form] = Form.useForm();
   const [role, setRole] = useState([]);
   const [fileList, setFileList] = useState([]); // Quản lý file ảnh
@@ -81,15 +81,15 @@ function CreateTeacher() {
       });
 
       if (response.status === 200 || response.status === 201) {
-        message.success("Thêm giáo viên thành công!");
+        message.success("Thêm người dùng thành công!");
         form.resetFields(); // Reset form
         setFileList([]); // Reset fileList
       } else {
-        message.error("Thêm giáo viên thất bại!");
+        message.error("Thêm người dùng thất bại!");
       }
     } catch (error) {
-      console.error("Lỗi khi thêm giáo viên:", error);
-      message.error("Có lỗi xảy ra khi thêm giáo viên.");
+      console.error("Lỗi khi thêm người dùng:", error);
+      message.error("Có lỗi xảy ra khi thêm người dùng.");
     }
   };
 
@@ -226,4 +226,4 @@ function CreateTeacher() {
   );
 }
 
-export default CreateTeacher;
+export default CreateUser;
